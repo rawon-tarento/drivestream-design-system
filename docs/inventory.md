@@ -1,8 +1,9 @@
 # Design system inventory (@drivestream/ui)
 
-**Status:** v0.1 — extracted from drivestream-ops prototype  
+**Status:** v0.1.1 — extracted from drivestream-ops prototype  
 **Gallery:** `npm run storybook`  
-**Package:** `@drivestream/ui`
+**Package:** `@drivestream/ui`  
+**Install:** GitHub tag pin (no npm registry) — see [`consume.md`](./consume.md)
 
 ## L0 — Tokens
 
