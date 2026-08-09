@@ -1,0 +1,38 @@
+/**
+ * @drivestream/ui style entry.
+ * Consumers: import "@drivestream/ui/styles.css" after configuring Tailwind
+ * content to include this package (see README).
+ */
+@import "tailwindcss";
+@import "./globals-base.css";
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--placeholder-foreground);
+    opacity: 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-tight);
+    color: var(--primary);
+  }
+}

@@ -1,0 +1,244 @@
+/**
+ * L0c — Tailwind v4 @theme inline mappings (drivestream-ops)
+ * Maps semantic tokens → utility classes (bg-*, text-*, p-*, shadow-*, etc.)
+ * Last synced: 2026-07-08
+ */
+
+@theme inline {
+  /* Colors — canvas & text */
+  --color-background: var(--background);
+  --color-background-subtle: var(--background-subtle);
+  --color-background-muted: var(--background-muted);
+  --color-background-inverse: var(--background-inverse);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-foreground-subtle: var(--foreground-subtle);
+  --color-foreground-disabled: var(--foreground-disabled);
+  --color-foreground-inverse: var(--foreground-inverse);
+
+  /* Colors — surfaces */
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-alt);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-sunken: var(--surface-sunken);
+  --color-surface-hover: var(--surface-hover);
+  --color-surface-pressed: var(--surface-pressed);
+  --color-surface-selected: var(--surface-selected);
+  --color-surface-disabled: var(--surface-disabled);
+  --color-surface-overlay: var(--surface-overlay);
+
+  /* Colors — brand */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-pressed: var(--primary-pressed);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-subtle: var(--primary-subtle);
+  --color-primary-border: var(--primary-border);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-secondary-pressed: var(--secondary-pressed);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary-subtle: var(--secondary-subtle);
+  --color-secondary-border: var(--secondary-border);
+
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-pressed: var(--accent-pressed);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-border: var(--accent-border);
+
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-secondary-hover: var(--accent-secondary-hover);
+  --color-accent-secondary-foreground: var(--accent-secondary-foreground);
+  --color-accent-secondary-subtle: var(--accent-secondary-subtle);
+
+  /* Colors — borders */
+  --color-border: var(--border);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-strong: var(--border-strong);
+  --color-border-focus: var(--border-focus);
+  --color-border-error: var(--border-error);
+  --color-border-success: var(--border-success);
+  --color-border-warning: var(--border-warning);
+  --color-divider: var(--divider);
+
+  /* Colors — forms */
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-input-background-disabled: var(--input-background-disabled);
+  --color-input-border: var(--input-border);
+  --color-input-border-hover: var(--input-border-hover);
+  --color-input-border-focus: var(--input-border-focus);
+  --color-input-border-error: var(--input-border-error);
+  --color-input-foreground: var(--input-foreground);
+  --color-input-placeholder: var(--input-placeholder);
+
+  /* Colors — focus & links */
+  --color-ring: var(--ring);
+  --color-ring-offset: var(--ring-offset);
+  --color-ring-error: var(--ring-error);
+  --color-ring-success: var(--ring-success);
+  --color-focus: var(--focus);
+  --color-link: var(--link);
+  --color-link-hover: var(--link-hover);
+  --color-link-visited: var(--link-visited);
+
+  /* Colors — components */
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-tooltip: var(--tooltip);
+  --color-tooltip-foreground: var(--tooltip-foreground);
+  --color-modal-overlay: var(--modal-overlay);
+  --color-modal-background: var(--modal-background);
+
+  /* Colors — status */
+  --color-success: var(--success);
+  --color-success-hover: var(--success-hover);
+  --color-success-foreground: var(--success-foreground);
+  --color-success-subtle: var(--success-subtle);
+  --color-success-border: var(--success-border);
+  --color-success-muted: var(--success-muted);
+
+  --color-warning: var(--warning);
+  --color-warning-hover: var(--warning-hover);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-warning-subtle: var(--warning-subtle);
+  --color-warning-highlight: var(--warning-highlight);
+  --color-warning-border: var(--warning-border);
+  --color-warning-muted: var(--warning-muted);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-destructive-pressed: var(--destructive-pressed);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-subtle: var(--destructive-subtle);
+  --color-destructive-border: var(--destructive-border);
+  --color-destructive-muted: var(--destructive-muted);
+
+  --color-info: var(--info);
+  --color-info-hover: var(--info-hover);
+  --color-info-foreground: var(--info-foreground);
+  --color-info-subtle: var(--info-subtle);
+  --color-info-border: var(--info-border);
+  --color-info-muted: var(--info-muted);
+
+  /* Colors — muted & icons */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted-subtle: var(--muted-subtle);
+  --color-placeholder-foreground: var(--placeholder-foreground);
+
+  --color-icon: var(--icon);
+  --color-icon-muted: var(--icon-muted);
+  --color-icon-subtle: var(--icon-subtle);
+  --color-icon-inverse: var(--icon-inverse);
+  --color-icon-accent: var(--icon-accent);
+  --color-icon-success: var(--icon-success);
+  --color-icon-warning: var(--icon-warning);
+  --color-icon-destructive: var(--icon-destructive);
+  --color-icon-info: var(--icon-info);
+
+  /* Colors — utility & charts */
+  --color-selection: var(--selection);
+  --color-highlight: var(--highlight);
+  --color-on-primary: var(--on-primary);
+  --color-on-accent: var(--on-accent);
+  --color-on-destructive: var(--on-destructive);
+  --color-on-success: var(--on-success);
+  --color-on-warning: var(--on-warning);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Spacing — primitives (literal values; avoid var(--spacing-N) self-reference in @theme) */
+  --spacing-0: 0;
+  --spacing-0\.5: 0.125rem;
+  --spacing-1: 0.25rem;
+  --spacing-1\.5: 0.375rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+
+  /* Spacing — semantics (alias primitive scale entries above) */
+  --spacing-control-xs: var(--spacing-1);
+  --spacing-control-sm: var(--spacing-2);
+  --spacing-control-md: var(--spacing-3);
+  --spacing-control-lg: var(--spacing-4);
+  --spacing-inline: var(--spacing-2);
+  --spacing-stack-sm: var(--spacing-3);
+  --spacing-stack-md: var(--spacing-4);
+  --spacing-stack-lg: var(--spacing-6);
+  --spacing-section: var(--spacing-8);
+  --spacing-page: var(--spacing-12);
+  --spacing-gap-tight: var(--spacing-2);
+  --spacing-gap-default: var(--spacing-4);
+  --spacing-gap-loose: var(--spacing-6);
+
+  /* Typography scale */
+  --text-xs: var(--font-size-xs);
+  --text-xs--line-height: var(--line-height-xs);
+  --text-sm: var(--font-size-sm);
+  --text-sm--line-height: var(--line-height-sm);
+  --text-base: var(--font-size-base);
+  --text-base--line-height: var(--line-height-base);
+  --text-lg: var(--font-size-lg);
+  --text-lg--line-height: var(--line-height-lg);
+  --text-xl: var(--font-size-xl);
+  --text-xl--line-height: var(--line-height-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-2xl--line-height: var(--line-height-2xl);
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Radius — primitives (literal values) */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  --radius: var(--radius-lg);
+
+  /* Radius — semantics (alias primitive scale entries above) */
+  --radius-control: var(--radius-lg);
+  --radius-surface: var(--radius-xl);
+  --radius-badge: var(--radius-full);
+  --radius-chip: var(--radius-md);
+  --radius-button: var(--radius-lg);
+  --radius-input: var(--radius-lg);
+  --radius-card: var(--radius-xl);
+  --radius-modal: var(--radius-xl);
+  --radius-avatar: var(--radius-full);
+  --radius-pill: var(--radius-full);
+
+  /* Shadows (literal values from primitives) */
+  --shadow-xs: 0 1px 2px 0 rgb(15 23 42 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(15 23 42 / 0.1), 0 1px 2px -1px rgb(15 23 42 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(15 23 42 / 0.1), 0 2px 4px -2px rgb(15 23 42 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(15 23 42 / 0.1), 0 4px 6px -4px rgb(15 23 42 / 0.1);
+
+  /* Motion */
+  --default-transition-duration: 200ms;
+  --ease-default: cubic-bezier(0.4, 0, 0.2, 1);
+}
