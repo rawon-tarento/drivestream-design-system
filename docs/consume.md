@@ -7,7 +7,7 @@ Install source is **this GitHub repo**, pinned by **tag** (or commit SHA). After
 ```json
 {
   "dependencies": {
-    "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.1.1"
+    "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.2.0"
   }
 }
 ```

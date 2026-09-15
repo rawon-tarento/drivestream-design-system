@@ -13,7 +13,7 @@ In `drivestream-ops` (or any portal) `package.json`:
 ```json
 {
   "dependencies": {
-    "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.1.1"
+    "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.2.0"
   }
 }
 ```
@@ -83,5 +83,5 @@ npm run lint:tokens
 
 1. Land changes on `main` + Storybook check.
 2. Bump `version` in `package.json`.
-3. Tag: `git tag v0.1.1 && git push origin v0.1.1`
+3. Tag: `git tag v0.2.0 && git push origin v0.2.0`
 4. Portal PR bumps the `#v…` pin — that is how developers get the update.

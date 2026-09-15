@@ -8,7 +8,7 @@
 github:rawon-tarento/drivestream-design-system#v<semver>
 ```
 
-Example: `#v0.1.1`
+Example: `#v0.2.0`
 
 ## Who does what
 
@@ -31,17 +31,17 @@ Example: `#v0.1.1`
 ```bash
 npm run release:check
 # bump "version" in package.json to match the tag
-git add -A && git commit -m "Release v0.1.1"
-git tag v0.1.1
+git add -A && git commit -m "Release v0.2.0"
+git tag v0.2.0
 git push origin main
-git push origin v0.1.1
+git push origin v0.2.0
 ```
 
 Then portal:
 
 ```diff
-- "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.1.0"
-+ "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.1.1"
+- "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.1.1"
++ "@drivestream/ui": "github:rawon-tarento/drivestream-design-system#v0.2.0"
 ```
 
 ## Why not track main
