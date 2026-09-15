@@ -1,6 +1,7 @@
 # Design system inventory (@drivestream/ui)
 
-**Status:** v0.1.1 — extracted from drivestream-ops prototype  
+**Status:** v0.2.0 — extracted from drivestream-ops prototype  
+
 **Gallery:** `npm run storybook`  
 **Package:** `@drivestream/ui`  
 **Install:** GitHub tag pin (no npm registry) — see [`consume.md`](./consume.md)
@@ -46,6 +47,8 @@ Every L1 has a Storybook story under **L1/**.
 | Modal | `modal.tsx` | Root / Trigger / Content (`size`) / Header / Body / Footer |
 | Dialog | `dialog.tsx` | Modal aliases — prefer Modal |
 | DropdownMenu | `dropdown-menu.tsx` | Trigger / Content / Item |
+| PaginationBar | `pagination-bar.tsx` | `pageSize` + `onPageSizeChange` · `from` / `to` / `total` · `onPrevious` / `onNext` · options default 20 \| 30 \| 40 \| 50 |
+| Toast | `toast.tsx` | Provider + Viewport + Toast (`variant`) · Title / Description / Action / Close — same status set as Alert |
 
 ## Not in this package (v0.1)
 
