@@ -13,13 +13,7 @@
     "isolatedModules": true,
     "declaration": true,
     "declarationMap": true,
-    "noEmit": true,
-    "rootDir": "src",
-    "baseUrl": ".",
-    "paths": {
-      "@drivestream/ui": ["./src/index.ts"],
-      "@drivestream/ui/*": ["./src/*"]
-    }
+    "noEmit": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist", "src/**/*.stories.tsx"]
