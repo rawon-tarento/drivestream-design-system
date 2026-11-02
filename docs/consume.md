@@ -72,6 +72,16 @@ import {
 } from "@drivestream/ui";
 ```
 
+## Workspace chrome
+
+L2 chrome is a second entry. It is not part of the barrel above, so a primitive-only screen never loads the wizard, page header, or help modal.
+
+```tsx
+import { WorkspacePage, SteppedWizard } from "@drivestream/ui/chrome";
+```
+
+The same GitHub pin installs both entries. Bump the pin when chrome changes. Do not add a second package dependency.
+
 ## Tailwind
 
 Class names live in the package. Ensure the host scan includes:

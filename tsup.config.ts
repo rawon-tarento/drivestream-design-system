@@ -1,9 +1,14 @@
 import { defineConfig } from "tsup";
 
 export default defineConfig({
-  entry: ["src/index.ts"],
+  entry: {
+    index: "src/index.ts",
+    chrome: "src/chrome/index.jsx",
+  },
   format: ["esm"],
-  dts: true,
+  dts: {
+    entry: "src/index.ts",
+  },
   sourcemap: true,
   clean: true,
   splitting: false,
@@ -21,6 +26,7 @@ export default defineConfig({
     "class-variance-authority",
     "clsx",
     "tailwind-merge",
+    "@drivestream/ui",
   ],
   esbuildOptions(options) {
     options.jsx = "automatic";

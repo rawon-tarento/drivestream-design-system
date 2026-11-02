@@ -76,8 +76,9 @@ npm run lint:tokens
 | Layer | In this package |
 |-------|-----------------|
 | L0 Tokens | `src/styles/tokens/*` |
-| L1 Primitives | `src/components/*` |
-| L2–L4 | Product apps / later |
+| L1 Primitives | `src/components/*`, imported from `@drivestream/ui` |
+| L2 workspace chrome | `@drivestream/ui/chrome` only. Page header, wizard, help, and trail. Not re-exported from the L1 barrel. |
+| L3–L4 | Product apps |
 
 ## Release (maintainers)
 

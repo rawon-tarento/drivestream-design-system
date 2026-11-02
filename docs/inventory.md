@@ -50,9 +50,21 @@ Every L1 has a Storybook story under **L1/**.
 | PaginationBar | `pagination-bar.tsx` | `pageSize` + `onPageSizeChange` · `from` / `to` / `total` · `onPrevious` / `onNext` · options default 20 \| 30 \| 40 \| 50 |
 | Toast | `toast.tsx` | Provider + Viewport + Toast (`variant`) · Title / Description / Action / Close — same status set as Alert |
 
-## Not in this package (v0.1)
+## L2 — workspace chrome
 
-- L3 shells (`WorkspacePage`, `AppSidebar`, wizard chrome)
+Imported from `@drivestream/ui/chrome`, never from `@drivestream/ui`.
+
+| Piece | File |
+|-------|------|
+| Page, header, card | `src/chrome/workspace-page.jsx`, `workspace-page-header.jsx` |
+| Stepped wizard | `src/chrome/stepped-wizard.jsx` |
+| Help | `src/chrome/workspace-help-modal.jsx` |
+| Trail and in-page navigation | `src/chrome/shell-trail.jsx`, `nav.jsx` |
+| Copy lookup | `src/chrome/i18n.js` |
+
+## Not in this package
+
+- Application sidebar, session, and plugin host
 - L4 domain components
 - Figma `.figma.ts` Code Connect maps (remain in product apps until bridge lands here)
 
